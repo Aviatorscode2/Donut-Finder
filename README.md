@@ -10,8 +10,8 @@ Welcome to the Donut Finder project! We appreciate your interest in contributing
 3. [Coding Standards](#coding-standards)
 4. [Commit Messages](#commit-messages)
 5. [Pull Request Process](#pull-request-process)
-6. [Code of Conduct](#code-style-guidelines)
-7. [Contact](#issue-tracking)
+6. [Code Style Guidelines](#code-style-guidelines)
+7. [Issue Tracking](#issue-tracking)
 
 ### Getting Started
 
