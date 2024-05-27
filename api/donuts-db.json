@@ -1,0 +1,95 @@
+{
+    "donut_store": [
+      {
+        "store_name": "Honey Kettle Donut Shop",
+        "street_address": "1234 Nectar Ave, Honeyville, CA 91401 ",
+        "phone": "(555) 123-1234",
+        "id": 1,
+        "donut inventory": [
+            {
+                "donut_type": "bear claw",
+                "variation_filling": "almond paste, raspberry, chocolate, vanilla cream",
+                "variation_topping": "chocolate, powdered sugar"
+              },
+              {
+                "donut_type": "cruller",
+                "variation_filling": "none",
+                "variation_topping": "chocolate, glazed, maple, pink"
+              },
+              {
+                "donut_type": "donut holes",
+                "variation_filling": "none",
+                "variation_topping": "chocolate, glazed"
+              },
+              {
+                "donut_type": "jelly",
+                "variation_filling": "lemon, cherry, raspberry, vanilla cream",
+                "variation_topping": "glazed, powdered sugar"
+              }
+            ]
+      },
+      {
+        "store_name": "Michaelangelo's Morsels",
+        "street_address": "222 Yum Drive, Chocolate, CA 91403",
+        "phone": "(555) 222-2212",
+        "id": 2,
+        "donut inventory": [
+              {
+                "donut_type": "bear claw",
+                "variation_filling": "none",
+                "variation_topping": "chocolate, glazed, maple, pink"
+              },
+              {
+                "donut_type": "donut holes",
+                "variation_filling": "none",
+                "variation_topping": "chocolate, glazed"
+              }
+            ]
+      },    
+      {
+        "store_name": "Betsy's Best Donuts",
+        "street_address": "998 Flavor Street, Cordial, CA 91403",
+        "phone": "(555) 181-1181",
+        "id": 3,
+        "donut inventory": [
+            {
+                "donut_type": "cruller",
+                "variation_filling": "none",
+                "variation_topping": "chocolate, glazed, maple, pink"
+              },
+              {
+                "donut_type": "donut holes",
+                "variation_filling": "none",
+                "variation_topping": "chocolate, glazed"
+              },
+              {
+                "donut_type": "jelly",
+                "variation_filling": "lemon, cherry, raspberry, vanilla cream",
+                "variation_topping": "glazed, powdered sugar"
+              }
+            ]
+      }
+    ],
+    "donut_type": [
+        {
+            "donut_name": "bear claw",
+            "id": 1,
+            "donut_stores": [1, 2]
+        },
+        {
+            "donut_name": "cruller",
+            "id": 2,
+            "donut_stores": [1, 3]
+        },
+        {
+            "donut_name": "donut holes",
+            "id": 3,
+            "donut_stores": [1, 2, 3]
+        },
+        {
+            "donut_name": "jelly",
+            "id": 4,
+            "donut_stores": [1, 3]
+        }
+      ]
+  }
