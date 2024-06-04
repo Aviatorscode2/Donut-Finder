@@ -42,9 +42,8 @@ Learn how to manage donut inventory using the Donut Finder service.
 
 Detailed information about the Donut Finder service's resources and endpoints.
 
-* [Donut Shop Endpoints](../docs/api/donut-store/index.md)
-* [Donut Type Endpoints](../docs/api/donut-type/index.md)
-
+* [Donut Shop Endpoints](api/donut-store/index.md)
+* [Donut Type Endpoints](api/donut-type/index.md)
 
 ## Database Schema
 The Donut Finder service uses the following database schema:
