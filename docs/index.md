@@ -17,12 +17,12 @@ To get started with the Donut Finder service, you can use the following endpoint
 
 Learn how to perform common tasks with the Donut Finder service.
 
-### Donut Shop Management
+### Donut Store Management
 
 Learn how to manage donut shops using the Donut Finder service.
-* [Add a new donut shop](tutorials/add-donut-shop.md)
-* [Update an existing donut shop]()
-* [Delete a donut shop]()
+* [Add a new donut store](tutorials/add-donut-shop.md)
+* [Update an existing donut store]()
+* [Delete a donut store]()
 
 ### Donut Type Management
 
@@ -34,27 +34,17 @@ Learn how to manage donut types using the Donut Finder service.
 ### Donut Inventory Management
 
 Learn how to manage donut inventory using the Donut Finder service.
-* [Add a new donut to a shop's inventory](#)
-* [Update a donut in a shop's inventory](#)
-* [Remove a donut from a shop's inventory](#)
+* [Add a new donut to a store's inventory](#)
+* [Update a donut in a store's inventory](#)
+* [Remove a donut from a store's inventory](#)
 
 ## API Reference
 
 Detailed information about the Donut Finder service's resources and endpoints.
 
-### Donut Shop Endpoints
-* `GET /donut_store` - Get a list of all donut shops
-* `GET /donut_store/{id}` - Get details for a specific donut shop
-* `POST /donut_store` - Add a new donut shop
-* `PUT /donut_store/{id}` - Update an existing donut shop
-* `DELETE /donut_store/{id}` - Delete a donut shop
+* [Donut Shop Endpoints](../docs/api/donut-store/index.md)
+* [Donut Type Endpoints](../docs/api/donut-type/index.md)
 
-### Donut Type Endpoints
-* `GET /donut_type` - Get a list of all donut types
-* `GET /donut_type/{id}` - Get details for a specific donut type
-* `POST /donut_type` - Add a new donut type
-* `PUT /donut_type/{id}` - Update an existing donut type
-* `DELETE /donut_type/{id}` - Delete a donut type
 
 ## Database Schema
 The Donut Finder service uses the following database schema:
