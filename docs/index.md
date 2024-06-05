@@ -20,16 +20,16 @@ Learn how to perform common tasks with the Donut Finder service.
 ### Donut Store Management
 
 Learn how to manage donut shops using the Donut Finder service.
-* [Add a new donut store](tutorials/add-donut-shop.md)
-* [Update an existing donut store]()
-* [Delete a donut store]()
+* [Add a new donut store](tutorials/donut-store/add-new-store.md)
+* [Update an existing donut store](tutorials/donut-store/update-a-store.md)
+* [Delete a donut store](tutorials/donut-store/delete-store.md)
 
 ### Donut Type Management
 
 Learn how to manage donut types using the Donut Finder service.
-* [Add a new donut type](#)
-* [Update an existing donut type](#)
-* [Delete a donut type](#)
+* [Add a new donut type](tutorials/donut-type/add-new-donut-type.md)
+* [Update an existing donut type](tutorials/donut-type/update-a-donut-type.md)
+* [Delete a donut type](tutorials/donut-type/delete-a-donut-type.md)
 
 ### Donut Inventory Management
 
