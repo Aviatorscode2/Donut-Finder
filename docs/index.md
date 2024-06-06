@@ -8,10 +8,7 @@ The Donut Finder service is designed to help users find their favorite donut typ
 
 ## Quickstart
 
-To get started with the Donut Finder service, you can use the following endpoints:
-
-* `http://localhost:3000/donut_store`: Retrieve a list of donut shops and their available donut types.
-* `http://localhost:3000/donut_type`: Retrieve a list of all available donut types.
+To get started with the Donut Finder service, check out our [quickstart guide](api/quickstart.md)
 
 ## Tutorials
 
