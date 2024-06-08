@@ -2,9 +2,7 @@
 layout: page
 ---
 
-# Developer quickstart
-
-## Get up and running with the Donut Finder API
+# Quick Start Guide
 
 The Donut Finder API provides a simple interface for developers to access and manage information about donut stores and their offerings. This API enables users to retrieve detailed information about donut stores, the types of donuts they offer, and the variations available for each donut type. With the Donut Finder API, you can seamlessly integrate donut data into your applications, making it easier for donut enthusiasts to find their favorite treats.
 
@@ -17,23 +15,51 @@ Skip the quickstart and dive into the API reference for [Donut store](donut-stor
 
 This quickstart is designed to help get your local development environment setup and send your first API request. If you are an experienced developer or want to just dive into using the Donut Finder API, the API reference of the Donut API are a great place to start. Throughout this quickstart, you will learn:
 
-* How to set up your local development environment
-* How to send your first API request
+* [How to set up your local development environment](#part-a-set-up-your-local-development-environment)
+* [How to send your first API request](#part-b-send-your-first-api-request)
+* How to make request using [Postman](#using-postman) and [ `curl` ](#using-curl)
+
+It is intended for developers. It assumes that you have basic knowledge of: 
+    - Familiarity with RESTful APIs.
+    - Basic understanding of JSON format.
+    - Experience with tools like Postman or `curl` for making HTTP requests.
 
 If you run into any challenges or have questions getting started, please contact our [support team](https://donut.com/support).
 
-### Step 1: Set up your local development environment
+## Before you start
 
-Before you start using the Donut Finder API, set up your development environment. Follow these simple steps to get started:
+*Estimated completion time: 15-20 minutes*
 
-1. **Install Necessary Tools**: Ensure you have a system with Windows, Linux, or iOS. Install Postman or curl for making API requests.
-2. **Start Server**: `cd` into the `api` directory and start the server
-```bash
-json-server -w donuts-db.json
-```
-3. **Base URL**: For local testing, use `http://localhost:3000` as your {base_url}.
+> Before running this quickstart, ensure you have completed the following prerequisites:
+>
+> 1. **Installed Software**:
+>    - **Node.js and npm**: Ensure you have Node.js and npm installed. You can download them from the [official Node.js website](https://nodejs.org/).
+>    - **Git**: Ensure you have Git installed. You can download it from the [official Git website](https://git-scm.com/).
+>    - **Postman**: If you prefer using a graphical interface for making HTTP requests, download and install Postman from the [Postman website](https://www.postman.com/downloads/).
+>    - **curl**: If you prefer using the command line for making HTTP requests, install curl from the [curl website](https://curl.se/).
 
-### Step 2: Send your first API request
+
+### Part A: Set up your local development environment
+
+    - Clone the [Donut Finder API repository](https://github.com/Aviatorscode2/Donut-Finder) to your local machine using Git.
+    - Navigate to the cloned repository directory and open it using a code editor of your choice.
+    - **Start Server**: `cd` into the `api` directory and start the server
+    
+    ```bash
+    json-server -w donuts-db.json
+    ```
+
+    If your development system is installed correctly, you should see the service start and running on the following endpoints
+    
+    ```bash
+    http://localhost:3000/donut_store
+    http://localhost:3000/donut_type
+    ```
+    with `localhost` being the {server_url} of your development system.
+
+By ensuring you meet these prerequisites, you'll be well-prepared to follow along with the quickstart guide and make the most out of the Donut Finder API.
+
+### Part B: Send your first API request
 
 In this section, we'll show you how to make a POST request to the Donut Finder API to add a new donut store. We'll cover how to do this using both Postman and `curl`.
 
@@ -108,9 +134,9 @@ With these steps, you have successfully made your first POST request to the Donu
 
 ---
 
-### What’s Next?
+## What’s Next?
 
-Explore more features and tutorials:
+Now that you've completed this quickstart, try these to learn more about Donut API features through these tutorials:
 
 - **Add a New Donut Store**: [Enroll a User](../tutorials/donut-store/add-new-store.md)
 - **Update a Donut Store**: [Update a Donut Store](../tutorials/donut-store/update-a-store.md)
@@ -118,12 +144,3 @@ Explore more features and tutorials:
 - **Get a Donut Store**: [Get a Donut Store](../tutorials/get-a-donut-store.md)
 - **Get a List of Donut Stores**: [Get a List of Donut Stores](../tutorials/donut-store/get-a-list-of-donut-stores.md)
 - **Get a List of Donut Types**: [Get a List of Donut Types](../tutorials/donut-type/get-a-list-of-donut-types.md)
-
----
-
-### Additional Resources
-
-- **[Overview](../index.md)**: Comprehensive guides and examples to help you integrate our API.
-- **API Reference**: In-depth technical details and endpoint specifications.
-  - [Donut Store Resource](../api/donut-store/index.md)
-  - [Donut Type Resource](../api/donut-type/index.md)
