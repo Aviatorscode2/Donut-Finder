@@ -32,34 +32,33 @@ If you run into any challenges or have questions getting started, please contact
 
 > Before running this quickstart, ensure you have completed the following prerequisites:
 >
-> 1. **Installed Software**:
 >    - **Node.js and npm**: Ensure you have Node.js and npm installed. You can download them from the [official Node.js website](https://nodejs.org/).
 >    - **Git**: Ensure you have Git installed. You can download it from the [official Git website](https://git-scm.com/).
 >    - **Postman**: If you prefer using a graphical interface for making HTTP requests, download and install Postman from the [Postman website](https://www.postman.com/downloads/).
 >    - **curl**: If you prefer using the command line for making HTTP requests, install curl from the [curl website](https://curl.se/).
 
 
-### Part A: Set up your local development environment
+## Part A: Set up your local development environment
 
     - Clone the [Donut Finder API repository](https://github.com/Aviatorscode2/Donut-Finder) to your local machine using Git.
     - Navigate to the cloned repository directory and open it using a code editor of your choice.
     - **Start Server**: `cd` into the `api` directory and start the server
     
-    ```bash
-    json-server -w donuts-db.json
-    ```
+```bash
+json-server -w donuts-db.json
+```
 
     If your development system is installed correctly, you should see the service start and running on the following endpoints
     
-    ```bash
-    http://localhost:3000/donut_store
-    http://localhost:3000/donut_type
-    ```
+```bash
+http://localhost:3000/donut_store
+http://localhost:3000/donut_type
+```
     with `localhost` being the {server_url} of your development system.
 
 By ensuring you meet these prerequisites, you'll be well-prepared to follow along with the quickstart guide and make the most out of the Donut Finder API.
 
-### Part B: Send your first API request
+## Part B: Send your first API request
 
 In this section, we'll show you how to make a POST request to the Donut Finder API to add a new donut store. We'll cover how to do this using both Postman and `curl`.
 
@@ -94,6 +93,11 @@ In this section, we'll show you how to make a POST request to the Donut Finder A
                 "donut_type": "glazed",
                 "variation_filling": "none",
                 "variation_topping": "glazed, chocolate"
+            },
+            {
+                "donut_type": "cruller",
+                "variation_filling": "none",
+                "variation_topping": "chocolate, glazed, maple, pink"
             }
         ]
     }
