@@ -62,6 +62,8 @@ To get started, you need to format and send a GET request to search for a donut 
 
     c. You should see a response containing the details of the matching donut type in JSON format.
 
+**Note**: If no donut store name matches the search criteria, the service will return an empty array ([]), indicating that there are no donut stores with the specified name.
+
 ## Summary
 
 In this tutorial, you learned how to:

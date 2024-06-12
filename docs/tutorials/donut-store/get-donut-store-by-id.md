@@ -84,6 +84,8 @@ To get started, you need to format and send a GET request to retrieve a donut st
 
     c. You should see a response containing the details of the specified donut store in JSON format, similar to the example shown above.
 
+**Note**: If no donut store name matches the search criteria, the service will return an empty array ([]), indicating that there are no donut stores with the specified name.
+
 ## Summary
 
 In this tutorial, you learned how to:
