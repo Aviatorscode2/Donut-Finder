@@ -22,6 +22,10 @@ By the end of this tutorial, you'll be able to:
 
 The Donut Finder API allows users to manage and access information about various donut stores and their inventories. Searching for a donut store by its name is a common operation that enables users to find stores quickly based on partial or full name matches. This tutorial will guide you through the process of making a GET request to search for a donut store by name using the Donut Finder API.
 
+---
+> Expect this tutorial to take about 10-5 minutes to complete.
+---
+
 ## Before You Start 
 
 Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
@@ -34,7 +38,7 @@ To get started, you need to format and send a GET request to search for a donut 
 
 1. **Format the GET request**:
 
-    The GET request requires the store name to be included as a query parameter in the URL. For example, to search for stores with the name "Honey", the URL would be `http://localhost:3000/donut_store?name=Honey`.
+    The GET request requires the store name to be included as a query parameter in the URL. For example, to search for stores with the name "Honey", the URL would be `http://localhost:3000/donut_store?store_name=Honey`.
 
 2. **Use Postman to search for a donut store by name**:
 
@@ -42,7 +46,7 @@ To get started, you need to format and send a GET request to search for a donut 
 
     b. Set the request type to `GET`.
 
-    c. Enter the URL: `{base_url}/donut_store?name={name}` (replace `{name}` with the name or partial name of the store you want to search for).
+    c. Enter the URL: `{base_url}/donut_store?store_name={name}` (replace `{store_name}` with the name or partial name of the store you want to search for).
 
     d. Click the "Send" button. You should see a response containing the details of the matching donut stores in JSON format. For example:
 
@@ -74,10 +78,10 @@ To get started, you need to format and send a GET request to search for a donut 
 
     a. Open your terminal.
 
-    b. Run the following `curl` command (replace `{name}` with the name or partial name of the store you want to search for):
+    b. Run the following `curl` command (replace `{store_name}` with the name or partial name of the store you want to search for):
 
     ```bash
-    curl -X GET "{base_url}/donut_store?name={name}"
+    curl -X GET "{base_url}/donut_store?name={store_name}"
     ```
 
     c. You should see a response containing the details of the matching donut stores in JSON format, similar to the example shown above.

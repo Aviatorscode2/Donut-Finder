@@ -22,17 +22,23 @@ By the end of this tutorial, you'll be able to:
 
 The Donut Finder API allows users to manage and access information about various donut stores and their inventories. Retrieving the details of a specific donut store by its ID is a common operation that enables users to view detailed information about a particular store. This tutorial will guide you through the process of making a GET request to retrieve a donut store by its ID using the Donut Finder API.
 
+---
+> Expect this tutorial to take about 10-5 minutes to complete.
+---
+
 ## Before You Start 
 
-
+Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
 
 ## Get Donut Store by ID
 
 To get started, you need to format and send a GET request to retrieve a donut store by its ID.
 
+> ⚠️ Anyways replace {base_url} with your base URL. For example, if your base URL is `http://localhost:3000`, then the URL should be `http://localhost:3000/donut_store`.
+
 1. **Format the GET request**:
 
-    The GET request requires the store ID to be included in the URL. For example, to get the store with ID 1, the URL would be `http://localhost:3000/donut_store/1`.
+    The GET request requires the store ID to be included in the URL. For example, to get the store with ID 1, the URL would be `{base_url}/donut_store/1`.
 
 2. **Use Postman to get a donut store by ID**:
 
@@ -40,7 +46,7 @@ To get started, you need to format and send a GET request to retrieve a donut st
 
     b. Set the request type to `GET`.
 
-    c. Enter the URL: `http://localhost:3000/donut_store/{id}` (replace `{id}` with the actual store ID you want to retrieve).
+    c. Enter the URL: `{base_url}/donut_store/{id}` (replace `{id}` with the actual store ID you want to retrieve).
 
     d. Click the "Send" button. You should see a response containing the details of the specified donut store in JSON format. For example:
 
@@ -73,7 +79,7 @@ To get started, you need to format and send a GET request to retrieve a donut st
     b. Run the following `curl` command (replace `{id}` with the actual store ID you want to retrieve):
 
     ```bash
-    curl -X GET http://localhost:3000/donut_store/{id}
+    curl -X GET {base_url}/donut_store/{id}
     ```
 
     c. You should see a response containing the details of the specified donut store in JSON format, similar to the example shown above.
