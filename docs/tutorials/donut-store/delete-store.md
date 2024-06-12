@@ -22,6 +22,10 @@ By the end of this tutorial, you'll be able to:
 
 The Donut Finder API allows users to manage and access information about various donut stores and their inventories. Deleting a donut store can be necessary for maintaining an up-to-date list of available stores. This tutorial will guide you through the process of making a DELETE request to remove a store from the database using the Donut Finder API.
 
+---
+> Expect this tutorial to take about 5 minutes to complete.
+---
+
 ## Before You Start 
 
 Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
@@ -35,7 +39,7 @@ To get started, you need to format and send a DELETE request to remove a donut s
 
 1. **Format the DELETE request**:
 
-    The DELETE request requires the store ID to be included in the URL. For example, to delete the store with ID 1, the URL would be `http://localhost:3000/donut_store/1`.
+    The DELETE request requires the store ID to be included in the URL. For example, to delete the store with ID 1, the URL would be `{base_url}/donut_store/1`.
 
 2. **Use Postman to delete a donut store**:
 
@@ -43,7 +47,7 @@ To get started, you need to format and send a DELETE request to remove a donut s
 
     b. Set the request type to `DELETE`.
 
-    c. Enter the URL: `http://localhost:3000/donut_store/{id}` (replace `{id}` with the actual store ID you want to delete).
+    c. Enter the URL: `{base_url}/donut_store/{id}` (replace `{id}` with the actual store ID you want to delete).
 
     d. Click the "Send" button. You should see a response indicating the success of the request, such as a status code `200 OK` or `204 No Content`.
 
@@ -54,7 +58,7 @@ To get started, you need to format and send a DELETE request to remove a donut s
     b. Run the following `curl` command (replace `{id}` with the actual store ID you want to delete):
 
     ```bash
-    curl -X DELETE http://localhost:3000/donut_store/{id}
+    curl -X DELETE {base_url}/donut_store/{id}
     ```
 
     c. You should see a response indicating the success of the request, such as a status code `200 OK` or `204 No Content`.

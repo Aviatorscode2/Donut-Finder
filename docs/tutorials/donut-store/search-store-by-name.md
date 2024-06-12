@@ -22,6 +22,10 @@ By the end of this tutorial, you'll be able to:
 
 The Donut Finder API allows users to manage and access information about various donut stores and their inventories. Searching for a donut store by its name is a common operation that enables users to find stores quickly based on partial or full name matches. This tutorial will guide you through the process of making a GET request to search for a donut store by name using the Donut Finder API.
 
+---
+> Expect this tutorial to take about 10-5 minutes to complete.
+---
+
 ## Before You Start 
 
 Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
