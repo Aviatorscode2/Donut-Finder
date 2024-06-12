@@ -1,44 +1,90 @@
 # Parameters for successful requests
 
-This section highlights the required and optional parameters for the operations of the To-Do service.
+This section highlights the required and optional parameters for the operations of the Donut Finder service.
 
 To get a successful response from the following operations, you must specify at least the `required` properties listed under each task. 
 
+## Donut Store Endpoints
+
+### Add a New Donut Store
+
+| Property         | Type   | Description                                                         |
+|------------------|--------|---------------------------------------------------------------------|
+| store_name       | String | Required. The name of the donut store.                              |
+| street_address   | String | Required. The street address of the donut store.                    |
+| phone            | String | Required. The phone number of the donut store.                      |
+| id               | Number | Optional. The unique identifier for the donut store.                |
+| donut_inventory  | Array  | Optional. A list of donut types available at the store.             |
+
+### Find donut store by id
+
+| Property         | Type   | Description                                                         |
+|------------------|--------|---------------------------------------------------------------------|
+| id               | Number | Required. The unique identifier of the store.                       |
+
+### Find donut store by name
+
+| Property         | Type   | Description                                                         |
+|------------------|--------|---------------------------------------------------------------------|
+| store_name       | String | Required. The name of the donut store.                              |
+
+### Find donut store by location
+
+| Property         | Type   | Description                                                         |
+|------------------|--------|---------------------------------------------------------------------|
+| street_address   | String | Required. The street address of the donut store.                       |
 
 
-## Add a new task
-| Property| Type|Description|
-|---|---|---|
-|user_id | Number   |Indicates the user-specified numeric value associated with a new task.|
-| title | String |Indicates a brief note about the task that you want to add.|
-| description | String | Description of the task.   |
-| due_date  | String (format: YYYY-MM-DD)   | Completion date of the task.   |
-| warning  | String  | Indicates the user-specified note that can impact a task.|
+### Delete a donut store by id
+
+| Property         | Type   | Description                                                         |
+|------------------|--------|---------------------------------------------------------------------|
+| id               | Number | Required. The unique identifier of the store.                       |
+
+### Update a donut store
+
+| Property         | Type   | Description                                                         |
+|------------------|--------|---------------------------------------------------------------------|
+| id               | Number | Required. The unique identifier of the store.                       |
+| store_name       | String | Optional. The name of the donut store.                              |
+| street_address   | String | Optional. The street address of the donut store.                    |
+| phone            | String | Optional. The phone number of the donut store.                      |
+| donut_inventory  | Array  | Optional. A list of donut types available at the store.             |
 
 
-## Find an existing user's id
+## Donut Type Endpoints
 
-| Property| Type|Description|
-|---|---|---|
-|last_name  |String| Last name of the user.|
-|first_name |String|First name of the user.|
-|email   |String| Email address   |
-|id| Number  | Indicates the user-specified identifier associated with the user name.|
+### Add a new donut type
 
+| Property         | Type   | Description                                                         |
+|------------------|--------|---------------------------------------------------------------------|
+| donut_name       | String | Required. The name of the donut type.                               |
+| id               | Number | Optional. The unique identifier for the donut store.                |
+| donut_stores	   | Array  | Optional. A list of store IDs where this donut type is available.   |
 
-## Delete a task
+### Find donut type by ID
 
-| Property| Type|Description|
-|---|---|---|
-|  ID | Number | Indicates the id of the task you want to delete.|
+| Property         | Type   | Description                                                         |
+|------------------|--------|---------------------------------------------------------------------|
+| id               | Number | Required. The unique identifier of the store.                       |
 
+### Find donut type by name
 
-## Find tasks by user ID
-
-
-| Property| Type|Description|
-|---|---|---|
-| ID  | Number| Indicates the user-specified ID of the task you want to find.|
+| Property         | Type   | Description                                                         |
+|------------------|--------|---------------------------------------------------------------------|
+| donut_name       | String | Required. The name of the donut type.                               |
 
 
+### Delete a donut type
 
+| Property         | Type   | Description                                                         |
+|------------------|--------|---------------------------------------------------------------------|
+| id               | Number | Required. The unique identifier of the donut type.                  |
+
+### Update a donut type
+
+| Property         | Type   | Description                                                         |
+|------------------|--------|---------------------------------------------------------------------|
+| id               | Number | Required. The unique identifier of the donut type.                  |
+| donut_name       | String | Required. The name of the donut type.                               |
+| donut_stores	   | Array  | Optional. A list of store IDs where this donut type is available.   |
