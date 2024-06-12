@@ -46,7 +46,7 @@ To get started, you need to format and send a GET request to filter donut stores
 
     b. Set the request type to `GET`.
 
-    c. Enter the URL: `{base_url}/donut_store?location={location}` (replace `{location}` with the location you want to filter by, e.g., "CA").
+    c. Enter the URL: `{base_url}/donut_store?street_address={location}` (replace `{location}` with the location you want to filter by, e.g., "CA").
 
     d. Click the "Send" button. You should see a response containing the details of the matching donut stores in JSON format. For example:
 
@@ -99,7 +99,7 @@ To get started, you need to format and send a GET request to filter donut stores
     b. Run the following `curl` command (replace `{location}` with the location you want to filter by, e.g., "CA"):
 
     ```bash
-    curl -X GET "{base_url}/donut_store?location={location}"
+    curl -X GET "{base_url}/donut_store?street_address={location}"
     ```
 
     c. You should see a response containing the details of the matching donut stores in JSON format, similar to the example shown above.
