@@ -42,3 +42,7 @@ The API reference docs refer to a `{base_url}` when they refer to the URL of a r
 
 * [Donut Shop Endpoints](api/donut-store/index.md)
 * [Donut Type Endpoints](api/donut-type/index.md)
+
+## Contact Us
+
+If you have any questions or need further assistance, please contact us at support@donutfinder.com.
