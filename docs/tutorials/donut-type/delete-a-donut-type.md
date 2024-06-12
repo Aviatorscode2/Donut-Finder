@@ -22,21 +22,23 @@ By the end of this tutorial, you'll be able to:
 
 The Donut Finder API allows users to manage and access information about various donut stores and their inventories. Deleting donut types is necessary when certain types of donuts are no longer available. This tutorial will guide you through the process of making a DELETE request to remove a donut type using the Donut Finder API.
 
+---
+> Expect this tutorial to take about 5 minutes to complete.
+---
+
 ## Before You Start 
 
-Before you start the tutorial, you should:
-
-* Have a basic understanding of RESTful APIs and JSON format
-* Have Postman installed, or know how to use `curl`
-* Ensure your local development environment is set up and the Donut Finder API server is running on `http://localhost:3000`
+Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
 
 ## Delete a Donut Type
 
 To get started, you need to format and send a DELETE request to remove a donut type.
 
+> ⚠️ Anyways replace {base_url} with your base URL. For example, if your base URL is `http://localhost:3000`, then the URL should be `http://localhost:3000/donut_store`.
+
 1. **Format the DELETE request**:
 
-    The DELETE request requires the ID of the donut type to be included in the URL. For example, to delete the donut type with ID 1, the URL would be `http://localhost:3000/donut_type/1`.
+    The DELETE request requires the ID of the donut type to be included in the URL. For example, to delete the donut type with ID 1, the URL would be `{base_url}/donut_type/1`.
 
 2. **Use Postman to delete a donut type**:
 
@@ -44,7 +46,7 @@ To get started, you need to format and send a DELETE request to remove a donut t
 
     b. Set the request type to `DELETE`.
 
-    c. Enter the URL: `http://localhost:3000/donut_type/{id}` (replace `{id}` with the ID of the donut type you want to delete).
+    c. Enter the URL: `{base_url}/donut_type/{id}` (replace `{id}` with the ID of the donut type you want to delete).
 
     d. Click the "Send" button. You should see a response indicating the donut type was successfully deleted.
 
@@ -55,7 +57,7 @@ To get started, you need to format and send a DELETE request to remove a donut t
     b. Run the following `curl` command (replace `{id}` with the ID of the donut type you want to delete):
 
     ```bash
-    curl -X DELETE "http://localhost:3000/donut_type/{id}"
+    curl -X DELETE "{base_url}/donut_type/{id}"
     ```
 
     c. You should see a response indicating the donut type was successfully deleted.
@@ -72,7 +74,7 @@ In this tutorial, you learned how to:
 
 Consider completing some other common tasks using the Donut Finder API:
 
-* [Add a new store](link-to-tutorial)
-* [Retrieve all donut stores](link-to-tutorial)
-* [Get details of a specific donut store](link-to-tutorial)
-* [Delete a donut store](link-to-tutorial)
+* [Add a new donut type](add-new-donut-type.md)
+* [Retrieve all donut types](get-a-list-of-donut-types.md)
+* [Get details of a specific donut type by name](search-donut-types-by-name.md)
+* [Update a donut type](update-a-donut-type.md)
