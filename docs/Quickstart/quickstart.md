@@ -40,21 +40,21 @@ If you run into any challenges or have questions getting started, please contact
 
 ## Part A: Set up your local development environment
 
-    - Clone the [Donut Finder API repository](https://github.com/Aviatorscode2/Donut-Finder) to your local machine using Git.
-    - Navigate to the cloned repository directory and open it using a code editor of your choice.
-    - **Start Server**: `cd` into the `api` directory and start the server
+- Clone the [Donut Finder API repository](https://github.com/Aviatorscode2/Donut-Finder) to your local machine using Git.
+- Navigate to the cloned repository directory and open it using a code editor of your choice.
+- **Start Server**: `cd` into the `api` directory and start the server using the command below
     
 ```bash
 json-server -w donuts-db.json
 ```
 
-    If your development system is installed correctly, you should see the service start and running on the following endpoints
+If your development system is installed correctly, you should see the service start and running on the following endpoints
     
 ```bash
 http://localhost:3000/donut_store
 http://localhost:3000/donut_type
 ```
-    with `localhost` being the {server_url} of your development system.
+with `localhost:3000` being the `{server_url}` of your development system.
 
 By ensuring you meet these prerequisites, you'll be well-prepared to follow along with the quickstart guide and make the most out of the Donut Finder API.
 

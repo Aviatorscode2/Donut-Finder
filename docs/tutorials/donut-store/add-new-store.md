@@ -28,13 +28,13 @@ The Donut Finder API allows users to manage and access information about various
 
 ## Before You Start
 
-Make sure you've completed the [Before you start a tutorial](../before-you-start-tutorial.md) topic on the development system you'll use for the tutorial.
+Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
 
 ## Add a New Store
 
 To get started, you need to format and send a POST request to add a new store.
 
-> NB: Anyways replace {base_url} with your base URL. For example, if your base URL is `http://localhost:3000`, then the URL should be `http://localhost:3000/donut_store`.
+> ⚠️ Anyways replace {base_url} with your base URL. For example, if your base URL is `http://localhost:3000`, then the URL should be `http://localhost:3000/donut_store`.
 
 1. **Format the POST request**:
 
@@ -110,6 +110,6 @@ In this tutorial, you learned how to:
 
 Consider completing some other common tasks using the Donut Finder API:
 
-* [Get all donut stores](link-to-tutorial)
-* [Get details of a specific donut store](link-to-tutorial)
-* [Update the inventory of a donut store](link-to-tutorial)
+* [Get all donut stores](get-list-of-donut-stores.md)
+* [Get details of a specific donut store](get-donut-store-by-id.md)
+* [Update the inventory of a donut store](update-a-store.md)
