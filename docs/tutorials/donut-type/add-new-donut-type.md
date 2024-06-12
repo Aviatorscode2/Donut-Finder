@@ -46,7 +46,7 @@ To get started, you need to format and send a POST request to add a new type of 
 
     b. Set the request type to `POST`.
 
-    c. Enter the URL: `http://localhost:3000/donut_type`.
+    c. Enter the URL: `{base_url}/donut_type`.
 
     d. In the "Body" tab, select "raw" and set the format to JSON.
 
@@ -67,7 +67,7 @@ To get started, you need to format and send a POST request to add a new type of 
     b. Run the following `curl` command:
 
     ```bash
-    curl -X POST "http://localhost:3000/donut_type" \
+    curl -X POST "{base_url}/donut_type" \
     -H "Content-Type: application/json" \
     -d '{
           "donut_name": "glazed twist"
@@ -88,7 +88,7 @@ In this tutorial, you learned how to:
 
 Consider completing some other common tasks using the Donut Finder API:
 
-* [Add a new store](link-to-tutorial)
-* [Retrieve all donut stores](link-to-tutorial)
-* [Get details of a specific donut store](link-to-tutorial)
-* [Delete a donut store](link-to-tutorial)
+* [Delete a new donut type](delete-a-donut-type.md)
+* [Retrieve all donut types](get-a-list-of-donut-types.md)
+* [Get details of a specific donut type by name](search-donut-types-by-name.md)
+* [Update a donut type](update-a-donut-type.md)
