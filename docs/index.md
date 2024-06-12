@@ -17,6 +17,8 @@ Learn how to perform common tasks with the Donut Finder service.
 #### Donut Store Management
 
 Learn how to manage donut shops using the Donut Finder service.
+
+* [Get a list of all donut stores](tutorials/donut-store/get-list-of-donut-stores.md)
 * [Add a new donut store](tutorials/donut-store/add-new-store.md)
 * [Update an existing donut store](tutorials/donut-store/update-a-store.md)
 * [Delete a donut store](tutorials/donut-store/delete-store.md)

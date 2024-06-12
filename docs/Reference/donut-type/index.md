@@ -1,7 +1,4 @@
-## Donut Type API Reference
-
-Table of Content
-## Overview
+# Donut Type API Reference
 
 The Donut Type API provides endpoints to interact with donut type data in the Donut Finder service. It allows you to retrieve information about donut types, as well as create, update, and delete donut type records.
 
