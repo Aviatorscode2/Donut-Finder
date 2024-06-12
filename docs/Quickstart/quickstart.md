@@ -9,7 +9,7 @@ The Donut Finder API provides a simple interface for developers to access and ma
 ---
 
 Want to jump straight to the code?
-Skip the quickstart and dive into the API reference for [Donut store](donut-store/index.md) and [Donut type](donut-type/index.md) endpoints.
+Skip the quickstart and dive into the API reference for [Donut store](../Reference/donut-store/index.md) and [Donut type](../Reference/donut-type/index.md) endpoints.
 
 ---
 
@@ -145,6 +145,6 @@ Now that you've completed this quickstart, try these to learn more about Donut A
 - **Add a New Donut Store**: [Enroll a User](../tutorials/donut-store/add-new-store.md)
 - **Update a Donut Store**: [Update a Donut Store](../tutorials/donut-store/update-a-store.md)
 - **Delete a Donut Store**: [Delete a Donut Store](../tutorials/donut-store/delete-store.md)
-- **Get a Donut Store**: [Get a Donut Store](../tutorials/get-a-donut-store.md)
-- **Get a List of Donut Stores**: [Get a List of Donut Stores](../tutorials/donut-store/get-a-list-of-donut-stores.md)
-- **Get a List of Donut Types**: [Get a List of Donut Types](../tutorials/donut-type/get-a-list-of-donut-types.md)
+- **Get a Donut Store**: [Get a Donut Store](../tutorials/donut-store/get-donut-store-by-id.md)
+- **Get List of Donut Stores**: [Get a List of Donut Stores](../tutorials/donut-store/get-list-of-donut-stores.md)
+- **Get List of Donut Types**: [Get a List of Donut Types](../tutorials/donut-type/get-a-list-of-donut-types.md)

@@ -98,7 +98,7 @@ In this tutorial, you learned how to:
 
 Consider completing some other common tasks using the Donut Finder API:
 
-* [Add a new store](link-to-tutorial)
-* [Retrieve all donut stores](link-to-tutorial)
-* [Update the inventory of a donut store](link-to-tutorial)
-* [Delete a donut store](link-to-tutorial)
+* [Add a new store](add-new-store.md)
+* [Get details of a specific donut store](get-donut-store-by-id.md)
+* [Update the inventory of a donut store](update-a-store.md)
+* [Delete a donut store](delete-store.md)

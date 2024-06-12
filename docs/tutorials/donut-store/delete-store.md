@@ -75,6 +75,7 @@ In this tutorial, you learned how to:
 
 Consider completing some other common tasks using the Donut Finder API:
 
-* [Add a new store](link-to-tutorial)
-* [Retrieve all donut stores](link-to-tutorial)
-* [Get details of a specific donut store](link-to-tutorial)
+* [Search donut store by name](search-store-by-name.md)
+* [Get details of a specific donut store by ID](get-donut-store-by-id.md)
+* [update donut store details](update-a-store.md)
+* [Get donut store by location](filter-store-by-location.md)
