@@ -20,7 +20,7 @@ The current API version is 1.0.
 
 ## Events
 
-The Donut Type API supports the following events: `donut_type added`, `donut_type updated`, and `donut_type deleted`.
+The Donut Type API supports the following events: `donut_type added`, `donut_type updated`, `donut_type deleted`, etc.
 
 ### Get a list of all donut type
 

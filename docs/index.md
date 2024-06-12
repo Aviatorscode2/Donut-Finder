@@ -8,7 +8,7 @@ The Donut Finder service is designed to help users find their favorite donut typ
 
 ## Quickstart
 
-To get started with the Donut Finder service, check out our [quickstart guide](api/quickstart.md)
+To get started with the Donut Finder service, check out our [quickstart guide](Quickstart/quickstart.md)
 
 ## Tutorials
 
@@ -40,8 +40,8 @@ The `donut_store` endpoint contains information about each donut shop, including
 
 The API reference docs refer to a `{base_url}` when they refer to the URL of a resource. The `{base_url}` value depends on the installation of the service. When running a local test, the `{base_url}` is generally `http://localhost:3000`.
 
-* [Donut Shop Endpoints](api/donut-store/index.md)
-* [Donut Type Endpoints](api/donut-type/index.md)
+* [Donut Shop Endpoints](Reference/donut-type/index.md)
+* [Donut Type Endpoints](Reference/donut-type/index.md)
 
 ## Contact Us
 

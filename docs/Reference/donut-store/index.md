@@ -23,7 +23,7 @@ The current API version is 1.0.
 
 ## Events
 
-The Donut Store API supports the following events: `donut_store added`, `donut_store updated`, and `donut_store deleted`.
+The Donut Store API supports the following events: `donut_store added`, `donut_store updated`,`donut_store deleted`, etc.
 
 ### Get a list of all donut store
 
@@ -155,7 +155,7 @@ POST {base_url}/donut_store
 
 #### Request body
 
-In the request body, specify a JSON representation of the [`donut_store`](donut_store) object. The following table lists the properties that are required when you add a new donut store. 
+In the request body, specify a JSON representation of the `donut_store` object. The following table lists the properties that are required when you add a new donut store. 
 
 | Parameter name | Type | Description |
 | -------------- | ------ | ------------ |
