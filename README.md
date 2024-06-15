@@ -1,6 +1,6 @@
 # Donut-Finder
 
-Welcome to the Donut Finder project! We appreciate your interest in contributing to our documentation. To ensure a smooth and effective contribution process, we've created this guide to help you get started.
+Welcome to the Donut Finder project! We appreciate your interest in contributing to our documentation. To ensure a smooth and effective contribution process, we've created this guide to help you get started. For detailed documentation on our REST API, visit the [Donut Finder API](https://aviatorscode2.github.io/Donut-Finder/) service documentation page.
 
 ## Contribution Guide
 
