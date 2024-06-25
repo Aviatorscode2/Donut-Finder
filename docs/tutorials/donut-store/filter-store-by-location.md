@@ -6,31 +6,17 @@ layout: page
 
 ## Overview
 
-In this tutorial, you'll learn how to filter donut stores by their location using the Donut Finder API. This tutorial is intended for developers who need to access information about donut stores based on their geographic location. It assumes you have basic knowledge of:
+In this tutorial, you'll learn how to filter donut stores by their location using the Donut Finder API.
 
-* RESTful APIs
-* JSON format
-* Tools like Postman or `curl`
+### Before You Start 
 
-By the end of this tutorial, you'll be able to:
-
-* Understand how to format a GET request to filter donut stores by location
-* Use Postman to filter donut stores by location
-* Use `curl` to filter donut stores by location
-
-## Background
-
-The Donut Finder API allows users to manage and access information about various donut stores and their inventories. Filtering stores by location is a common operation that enables users to find stores within a specific geographic area. This tutorial will guide you through the process of making a GET request to filter donut stores by location using the Donut Finder API.
+Before starting this tutorial, ensure you set up your test environment by following the steps outlined in the [Before you start a tutorial](../before-you-start-tutorial.md) section.
 
 ---
 > Expect this tutorial to take about 10-5 minutes to complete.
 ---
 
-## Before You Start 
-
-Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
-
-## Filter Store by Location
+## Tutorial: Filter Store by Location
 
 > ⚠️ Anyways replace {base_url} with your base URL. For example, if your base URL is `http://localhost:3000`, then the URL should be `http://localhost:3000/donut_store`.
 
@@ -48,7 +34,7 @@ To get started, you need to format and send a GET request to filter donut stores
 
     c. Enter the URL: `{base_url}/donut_store?street_address={location}` (replace `{location}` with the location you want to filter by, e.g., "CA").
 
-    d. Click the "Send" button. You should see a response containing the details of the matching donut stores in JSON format. For example:
+    d. Click the **Send** button. You should see a response containing the details of the matching donut stores in JSON format. For example:
 
     ```json
     [
@@ -110,9 +96,11 @@ To get started, you need to format and send a GET request to filter donut stores
 
 In this tutorial, you learned how to:
 
-* Format a GET request to filter donut stores by location
-* Use Postman to send a GET request to filter donut stores by location
-* Use `curl` to send a GET request to filter donut stores by location
+* Format a **GET** request to filter donut stores by location
+* Use Postman to send a **GET** request to filter donut stores by location
+* Use `curl` to send a **GET** request to filter donut stores by location
+
+---
 
 ## Next Steps
 

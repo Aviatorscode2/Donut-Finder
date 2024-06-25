@@ -4,33 +4,17 @@ layout: page
 
 # Add New Donut Type
 
-## Overview
+In this tutorial, you'll learn how to add a new type of donut to the Donut Finder API.
 
-In this tutorial, you'll learn how to add a new type of donut to the Donut Finder API. This tutorial is intended for developers who need to expand the list of available donut types in the system. It assumes you have basic knowledge of:
+### Before You Start 
 
-* RESTful APIs
-* JSON format
-* Tools like Postman or `curl`
-
-By the end of this tutorial, you'll be able to:
-
-* Understand how to format a POST request to add a new donut type
-* Use Postman to add a new donut type
-* Use `curl` to add a new donut type
-
-## Background
-
-The Donut Finder API allows users to manage and access information about various donut stores and their inventories. Adding new donut types is necessary when introducing new donuts to the system. This tutorial will guide you through the process of making a POST request to add a new donut type using the Donut Finder API.
+Before starting this tutorial, ensure you set up your test environment by following the steps outlined in the [Before you start a tutorial](../before-you-start-tutorial.md) section.
 
 ---
 > Expect this tutorial to take about 10-5 minutes to complete.
 ---
 
-## Before You Start 
-
-Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
-
-## Add New Donut Type
+## Tutorial: Add New Donut Type
 
 To get started, you need to format and send a POST request to add a new type of donut.
 
@@ -48,7 +32,7 @@ To get started, you need to format and send a POST request to add a new type of 
 
     c. Enter the URL: `{base_url}/donut_type`.
 
-    d. In the "Body" tab, select "raw" and set the format to JSON.
+    d. In the **Body** tab, select **raw** and set the format to JSON.
 
     e. Enter the details of the new donut type in JSON format. For example:
 
@@ -58,7 +42,7 @@ To get started, you need to format and send a POST request to add a new type of 
     }
     ```
 
-    f. Click the "Send" button. You should see a response indicating the new donut type was successfully added.
+    f. Click the **Send** button. You should see a response indicating the new donut type was successfully added.
 
 3. **Use `curl` to add a new donut type**:
 
@@ -80,9 +64,11 @@ To get started, you need to format and send a POST request to add a new type of 
 
 In this tutorial, you learned how to:
 
-* Format a POST request to add a new donut type
-* Use Postman to send a POST request to add a new donut type
-* Use `curl` to send a POST request to add a new donut type
+* Format a **POST** request to add a new donut type
+* Use Postman to send a **POST** request to add a new donut type
+* Use `curl` to send a **POST** request to add a new donut type
+
+---
 
 ## Next Steps
 

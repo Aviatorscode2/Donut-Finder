@@ -4,33 +4,17 @@ layout: page
 
 # Get All Donut Stores
 
-## Overview
+In this tutorial, you'll learn how to retrieve a list of all donut stores from the Donut Finder API.
 
-In this tutorial, you'll learn how to retrieve a list of all donut stores from the Donut Finder API. This tutorial is intended for developers who want to access and display information about all available donut stores. It assumes you have basic knowledge of:
+### Before You Start 
 
-* RESTful APIs
-* JSON format
-* Tools like Postman or `curl`
-
-By the end of this tutorial, you'll be able to:
-
-* Understand how to format a GET request to retrieve all donut stores
-* Use Postman to retrieve all donut stores
-* Use `curl` to retrieve all donut stores
-
-## Background
-
-The Donut Finder API allows users to manage and access information about various donut stores and their inventories. Retrieving a list of all donut stores is a common operation that enables users to view and interact with the available stores. This tutorial will guide you through the process of making a GET request to retrieve all donut stores using the Donut Finder API.
+Before starting this tutorial, ensure you set up your test environment by following the steps outlined in the [Before you start a tutorial](../before-you-start-tutorial.md) section.
 
 ---
 > Expect this tutorial to take about 5 minutes to complete.
 ---
 
-## Before You Start 
-
-Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
-
-## Get All Donut Stores
+## Tutorial: Get All Donut Stores
 
 To get started, you need to format and send a GET request to retrieve all donut stores.
 
@@ -48,7 +32,7 @@ To get started, you need to format and send a GET request to retrieve all donut 
 
     c. Enter the URL: `{base_url}/donut_store`.
 
-    d. Click the "Send" button. You should see a response containing a list of all donut stores in JSON format. For example:
+    d. Click the **Send** button. You should see a response containing a list of all donut stores in JSON format. For example:
 
     ```json
     [
@@ -100,9 +84,11 @@ To get started, you need to format and send a GET request to retrieve all donut 
 
 In this tutorial, you learned how to:
 
-* Format a GET request to retrieve all donut stores
-* Use Postman to send a GET request to retrieve all donut stores
-* Use `curl` to send a GET request to retrieve all donut stores
+* Format a **GET** request to retrieve all donut stores
+* Use Postman to send a **GET** request to retrieve all donut stores
+* Use `curl` to send a **GET** request to retrieve all donut stores
+
+---
 
 ## Next Steps
 

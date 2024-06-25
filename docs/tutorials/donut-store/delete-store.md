@@ -4,34 +4,18 @@ layout: page
 
 # Delete a Donut Store
 
-## Overview
+In this tutorial, you'll learn how to delete a donut store from the Donut Finder API.
 
-In this tutorial, you'll learn how to delete a donut store from the Donut Finder API. This tutorial is intended for developers who need to manage the list of donut stores by removing stores that are no longer relevant. It assumes you have basic knowledge of:
 
-* RESTful APIs
-* JSON format
-* Tools like Postman or `curl`
+### Before You Start 
 
-By the end of this tutorial, you'll be able to:
-
-* Understand how to format a DELETE request to remove a donut store
-* Use Postman to delete a donut store
-* Use `curl` to delete a donut store
-
-## Background
-
-The Donut Finder API allows users to manage and access information about various donut stores and their inventories. Deleting a donut store can be necessary for maintaining an up-to-date list of available stores. This tutorial will guide you through the process of making a DELETE request to remove a store from the database using the Donut Finder API.
+Before starting this tutorial, ensure you set up your test environment by following the steps outlined in the [Before you start a tutorial](../before-you-start-tutorial.md) section.
 
 ---
 > Expect this tutorial to take about 5 minutes to complete.
 ---
 
-## Before You Start 
-
-Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
-
-
-## Delete a Donut Store
+## Tutorial: Delete a Donut Store
 
 To get started, you need to format and send a DELETE request to remove a donut store by its ID.
 
@@ -47,15 +31,15 @@ To get started, you need to format and send a DELETE request to remove a donut s
 
     b. Set the request type to `DELETE`.
 
-    c. Enter the URL: `{base_url}/donut_store/{id}` (replace `{id}` with the actual store ID you want to delete).
+    c. Enter the URL: `{base_url}/donut_store/{id}` (replace `{id}` with the actual `store ID` you want to delete).
 
-    d. Click the "Send" button. You should see a response indicating the success of the request, such as a status code `200 OK` or `204 No Content`.
+    d. Click the **Send** button. You should see a response indicating the success of the request, such as a status code `200 OK` or `204 No Content`.
 
 3. **Use `curl` to delete a donut store**:
 
     a. Open your terminal.
 
-    b. Run the following `curl` command (replace `{id}` with the actual store ID you want to delete):
+    b. Run the following `curl` command (replace `{id}` with the actual `store ID` you want to delete):
 
     ```bash
     curl -X DELETE {base_url}/donut_store/{id}
@@ -67,9 +51,11 @@ To get started, you need to format and send a DELETE request to remove a donut s
 
 In this tutorial, you learned how to:
 
-* Format a DELETE request to remove a donut store
-* Use Postman to send a DELETE request to remove a donut store
-* Use `curl` to send a DELETE request to remove a donut store
+* Format a **DELETE** request to remove a donut store
+* Use Postman to send a **DELETE** request to remove a donut store
+* Use `curl` to send a **DELETE** request to remove a donut store
+
+---
 
 ## Next Steps
 

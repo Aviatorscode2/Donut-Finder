@@ -4,33 +4,17 @@ layout: page
 
 # Update a Donut Store
 
-## Overview
+In this tutorial, you'll learn how to update the details of an existing donut store using the Donut Finder API.
 
-In this tutorial, you'll learn how to update the details of an existing donut store using the Donut Finder API. This tutorial is intended for developers who need to modify information about donut stores. It assumes you have basic knowledge of:
+### Before You Start 
 
-* RESTful APIs
-* JSON format
-* Tools like Postman or `curl`
-
-By the end of this tutorial, you'll be able to:
-
-* Understand how to format a PUT request to update a donut store
-* Use Postman to update a donut store
-* Use `curl` to update a donut store
-
-## Background
-
-The Donut Finder API allows users to manage and access information about various donut stores and their inventories. Updating store details is a common operation that enables users to keep store information up-to-date. This tutorial will guide you through the process of making a PUT request to update a donut store's details using the Donut Finder API.
+Before starting this tutorial, ensure you set up your test environment by following the steps outlined in the [Before you start a tutorial](../before-you-start-tutorial.md) section.
 
 ---
 > Expect this tutorial to take about 10-5 minutes to complete.
 ---
 
-## Before You Start 
-
-Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
-
-## Update a Donut Store
+## Tutorial: Update a Donut Store
 
 To get started, you need to format and send a PUT request to update the details of an existing donut store.
 
@@ -46,7 +30,7 @@ To get started, you need to format and send a PUT request to update the details 
 
     b. Set the request type to `PUT`.
 
-    c. Enter the URL: `{base_url}/donut_store/{id}` (replace `{id}` with the ID of the store you want to update).
+    c. Enter the URL: `{base_url}/donut_store/{id}` (replace `{id}` with the `ID` of the store you want to update).
 
     d. In the "Body" tab, select "raw" and set the format to JSON.
 
@@ -60,7 +44,7 @@ To get started, you need to format and send a PUT request to update the details 
     }
     ```
 
-    f. Click the "Send" button. You should see a response indicating the store was successfully updated.
+    f. Click the **Send** button. You should see a response indicating the store was successfully updated.
 
 3. **Use `curl` to update a donut store**:
 
@@ -84,9 +68,11 @@ To get started, you need to format and send a PUT request to update the details 
 
 In this tutorial, you learned how to:
 
-* Format a PUT request to update a donut store
-* Use Postman to send a PUT request to update a donut store
-* Use `curl` to send a PUT request to update a donut store
+* Format a **PUT** request to update a donut store
+* Use Postman to send a **PUT** request to update a donut store
+* Use `curl` to send a **PUT** request to update a donut store
+
+---
 
 ## Next Steps
 
