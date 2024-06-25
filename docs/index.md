@@ -4,7 +4,7 @@ layout: page
 
 # Home
 
-The Donut Finder service is designed to help users find their favorite donut types at local donut shops. This documentation provides an overview of the service's functionality and available endpoints. The Donut Finder service has two endpoints: the donut store endpoint and the donut type endpoint. 
+Welcome to Donut Finder. The Donut Finder service is designed to help users find their favorite donut types at local donut shops. This documentation provides an overview of the service's functionality and available endpoints. The Donut Finder service has two endpoints: the donut store endpoint and the donut type endpoint. 
 
 ## Quickstart
 

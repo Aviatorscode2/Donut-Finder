@@ -2,37 +2,23 @@
 layout: page
 ---
 
-# Tutorial: Add a new store
+# Add a new store
 
-## Overview
+In this tutorial, you'll learn how to add a new store to the Donut Finder API.
 
-In this tutorial, you'll learn how to add a new store to the Donut Finder API. This tutorial is intended for developers who want to expand the database of donut stores. It assumes you have basic knowledge of:
+### Before You Start
 
-* RESTful APIs
-* JSON format
-* Tools like Postman or `curl`
-
-By the end of this tutorial, you'll be able to:
-
-* Understand how to format a POST request to add a new store
-* Use Postman to add a new store
-* Use `curl` to add a new store
-
-## Background
-
-The Donut Finder API allows users to manage and access information about various donut stores and their inventories. Adding new stores to the database enables users to discover more locations and enjoy a wider variety of donuts. This tutorial will guide you through the process of making a POST request to add a new store using the Donut Finder API.
+Before starting this tutorial, ensure you set up your test environment by following the steps outlined in the [Before you start a tutorial](../before-you-start-tutorial.md) section.
 
 ---
+
 > Expect this tutorial to take about 15 minutes to complete.
+
 ---
 
-## Before You Start
+## Tutorial: Add a New Store
 
-Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
-
-## Add a New Store
-
-To get started, you need to format and send a POST request to add a new store.
+To get started, you need to format and send a **POST** request to add a new store.
 
 > ⚠️ Anyways replace {base_url} with your base URL. For example, if your base URL is `http://localhost:3000`, then the URL should be `http://localhost:3000/donut_store`.
 
@@ -66,9 +52,9 @@ To get started, you need to format and send a POST request to add a new store.
 
     d. Add a header with `Key: Content-Type` and `Value: application/json`.
 
-    e. In the "Body" tab, choose "raw" and set the format to "JSON". Enter the JSON data for the new store.
+    e. In the **Body** tab, choose **raw** and set the format to **JSON**. Enter the JSON data for the new store.
 
-    f. Click the "Send" button. You should see a response indicating the success of the request, such as a status code `201 Created` and the details of the newly added store.
+    f. Click the **Send** button. You should see a response indicating the success of the request, such as a status code `201 Created` and the details of the newly added store.
 
 3. **Use `curl` to add a new store**:
 
@@ -100,9 +86,9 @@ To get started, you need to format and send a POST request to add a new store.
 
 In this tutorial, you learned how to:
 
-* Format a POST request to add a new store
-* Use Postman to send a POST request to add a new store
-* Use `curl` to send a POST request to add a new store
+* Format a **POST** request to add a new store
+* Use Postman to send a **POST** request to add a new store
+* Use `curl` to send a **POST** request to add a new store
 
 ---
 

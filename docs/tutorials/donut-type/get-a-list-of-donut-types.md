@@ -4,33 +4,17 @@ layout: page
 
 # Get All Donut Types
 
-## Overview
+In this tutorial, you'll learn how to retrieve a list of all available donut types from the Donut Finder API. 
 
-In this tutorial, you'll learn how to retrieve a list of all available donut types from the Donut Finder API. This tutorial is intended for developers who need to fetch the complete list of donut types stored in the system. It assumes you have basic knowledge of:
+### Before You Start 
 
-* RESTful APIs
-* JSON format
-* Tools like Postman or `curl`
-
-By the end of this tutorial, you'll be able to:
-
-* Understand how to format a GET request to retrieve all donut types
-* Use Postman to get all donut types
-* Use `curl` to get all donut types
-
-## Background
-
-The Donut Finder API allows users to manage and access information about various donut stores and their inventories. Retrieving all donut types is useful when displaying a list of available donut options to users. This tutorial will guide you through the process of making a GET request to retrieve all donut types using the Donut Finder API.
+Before starting this tutorial, ensure you set up your test environment by following the steps outlined in the [Before you start a tutorial](../before-you-start-tutorial.md) section.
 
 ---
-> Expect this tutorial to take about 5 minutes to complete.
+> Expect this tutorial to take about 10-5 minutes to complete.
 ---
 
-## Before You Start 
-
-Before starting this tutorial, install Postman and json-server. Then, sync the To-Do service to your GitHub repository so that you can clone it to your desktop. For a complete set of steps, see [Before you start a tutorial](../before-you-start-tutorial.md).
-
-## Get All Donut Types
+## Tutorial: Get All Donut Types
 
 To get started, you need to format and send a GET request to retrieve all donut types.
 
@@ -48,7 +32,7 @@ To get started, you need to format and send a GET request to retrieve all donut 
 
     c. Enter the URL: `{base_url}/donut_type`.
 
-    d. Click the "Send" button. You should see a response containing the details of all donut types stored in the system in JSON format.
+    d. Click the **Send** button. You should see a response containing the details of all donut types stored in the system in JSON format.
 
 3. **Use `curl` to get all donut types**:
 
@@ -66,9 +50,11 @@ To get started, you need to format and send a GET request to retrieve all donut 
 
 In this tutorial, you learned how to:
 
-* Format a GET request to retrieve all donut types
-* Use Postman to send a GET request to retrieve all donut types
-* Use `curl` to send a GET request to retrieve all donut types
+* Format a **GET** request to retrieve all donut types
+* Use Postman to send a **GET** request to retrieve all donut types
+* Use `curl` to send a **GET** request to retrieve all donut types
+
+---
 
 ## Next Steps
 
