@@ -20,6 +20,7 @@ This quickstart is designed to help get your local development environment setup
 * How to make request using [Postman](#using-postman) and [ `curl` ](#using-curl)
 
 It is intended for developers. It assumes that you have basic knowledge of:
+
 * Familiarity with RESTful APIs.
 * Basic understanding of JSON format.
 * Experience with tools like Postman or `curl` for making HTTP requests.
