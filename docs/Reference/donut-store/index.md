@@ -1,6 +1,5 @@
 # Donut Store API Reference
 
-Table of Content
 ## Overview
 
 The Donut Store API provides endpoints to interact with donut shop data in the Donut Finder service. It allows you to retrieve information about donut shops, as well as create, update, and delete donut shop records.
