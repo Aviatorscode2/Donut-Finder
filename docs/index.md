@@ -2,9 +2,34 @@
 layout: page
 ---
 
-# Home
+# Introduction
 
-Welcome to Donut Finder. The Donut Finder service is designed to help users find their favorite donut types at local donut shops. This documentation provides an overview of the service's functionality and available endpoints. The Donut Finder service has two endpoints: the donut store endpoint and the donut type endpoint. 
+The Donut Finder API allows developers to search for donut stores, retrieve detailed information about donuts, and perform related operations with ease. This documentation provides a complete reference to help you get started quickly and use the API effectively. The API follows a REST architecture. You can access the API’s resources via HTTP requests, and responses are given in JSON format.
+
+![Alt text](images/logo.png)
+
+<div class="grid-container">
+  <div class="grid-item">
+    <h3>Quickstart</h3>
+    <p>Get started quickly with our API.</p>
+    <a href="Quickstart/installation.md" class="button">Learn More</a>
+  </div>
+  <div class="grid-item">
+    <h3>Reference</h3>
+    <p>Dive into detailed API documentation.</p>
+    <a href="Reference/donut-store/index.md" class="button">View Reference</a>
+  </div>
+  <div class="grid-item">
+    <h3>Tutorial</h3>
+    <p>Learn how to use the API with step-by-step guides.</p>
+    <a href="Tutorial/donut-store/index.md" class="button">Start Tutorial</a>
+  </div>
+  <div class="grid-item">
+    <h3>Changelog</h3>
+    <p>View the latest updates and changes to the API.</p>
+    <a href="Changelog/changelog.md" class="button">View Changelog</a>
+  </div>
+</div>
 
 ## Quickstart
 

@@ -1,32 +1,21 @@
 # Donut Store API Reference
+The Donut Store API provides endpoints to interact with donut shop data in the Donut Finder service. This API allows you to retrieve information about donut shops, as well as create, update, and delete donut shop records.
 
-## Overview
+## **Base URL**
 
-The Donut Store API provides endpoints to interact with donut shop data in the Donut Finder service. You can retrieve information about donut shops, as well as create, update, and delete donut shop records.
-
-The Donut Store API follows a REST architecture. You can access the API’s resources via HTTP requests, and responses are given in JSON format.
-
-## Base URL
-
-The API reference docs refer to a `{base_url}` when they refer to the URL of a resource. The `{base_url}` value depends on the installation of the service.
-
-When running a local test, the `{base_url}` is generally `http://localhost:3000`.
-
-```shell
+```
 {base_url}/donut_store
 ```
 
-## Version
+## **Version**
 
 The current API version is 1.0.
 
-## Events
+## **Endpoints**
 
-The Donut Store API supports the following events: `donut_store added`, `donut_store updated`,`donut_store deleted`, etc.
+### **Retrieve All Donut Stores**
 
-### Get a list of all donut store
-
-Retrieves a list of all donut store.
+Returns a list of all donut stores and their inventory details.
 
 #### Endpoint
 
@@ -83,9 +72,9 @@ curl -X GET http://localhost:3000/donut_store
 ]
 ```
 
-### Get details for a specific donut store
+### **Retrieve a Donut Store by ID**
 
-Retrieves details for a donut shop specified by the `id` parameter, if it exists.
+Fetches details of a specific donut store by its unique `id`.
 
 #### Endpoint
 
@@ -94,10 +83,10 @@ GET {base_url}/donut_store/{id}
 ```
 
 #### Path parameters
+| Parameter name   | Type   | Required    | Description                                                         |
+|------------------|--------|-------------|---------------------------------------------------------------------|
+| `id`             | number | required    | The unique ID of the donut store.                                   |
 
-| Parameter name | Type | Description |
-| -------------- | ------ | ------------ |
-| `id` | number | The record ID of the donut store to return |
 
 #### Request example
 
@@ -109,38 +98,23 @@ curl -X GET http://localhost:3000/donut_store/1
 
 ```json
 {
-    "store_name": "Honey Kettle Donut Shop",
-    "street_address": "1234 Nectar Ave, Honeyville, CA 91401 ",
-    "phone": "(555) 123-1234",
-    "id": "1",
-    "donut inventory": [
-        {
-            "donut_type": "bear claw",
-            "variation_filling": "almond paste, raspberry, chocolate, vanilla cream",
-            "variation_topping": "chocolate, powdered sugar"
-        },
-        {
-            "donut_type": "cruller",
-            "variation_filling": "none",
-            "variation_topping": "chocolate, glazed, maple, pink"
-        },
-        {
-            "donut_type": "donut holes",
-            "variation_filling": "none",
-            "variation_topping": "chocolate, glazed"
-        },
-        {
-            "donut_type": "jelly",
-            "variation_filling": "lemon, cherry, raspberry, vanilla cream",
-            "variation_topping": "glazed, powdered sugar"
-        }
-    ]
+  "store_name": "Honey Kettle Donut Shop",
+  "street_address": "1234 Nectar Ave, Honeyville, CA 91401",
+  "phone": "(555) 123-1234",
+  "id": 1,
+  "donut_inventory": [
+    {
+      "donut_type": "bear claw",
+      "variation_filling": "almond paste, raspberry, chocolate, vanilla cream",
+      "variation_topping": "chocolate, powdered sugar"
+    }
+  ]
 }
 ```
 
-### Add a new donut store
+### **Create a New Donut Store**
 
-Adds a new donut shop to the donut store collection.
+Adds a new donut store to the database.
 
 #### Endpoint
 
@@ -148,20 +122,17 @@ Adds a new donut shop to the donut store collection.
 POST {base_url}/donut_store
 ```
 
-#### Request headers
-
-
 
 #### Request body
 
 In the request body, specify a JSON representation of the `donut_store` object. The following table lists the properties that are required when you add a new donut store. 
 
-| Parameter name | Type | Description |
-| -------------- | ------ | ------------ |
-| `store_name` | string | The name of the donut store |
-| `street_address` | string | The street address of the donut store |
-| `phone` | string | The phone number of the donut shop |
-| `donut inventory` | array | An array of donut items in the donut store's inventory |
+| Field | Type | Required | Description |
+|-------|-------|-------|-------------|
+| `store_name` | string | required | The name of the donut store. |
+| `street_address` | string | required | The street address of the donut store. |
+| `phone` | string | required | The store’s contact phone number. |
+| `donut inventory` | array | required | A list of donuts available.|
 
 #### Request example 
 
@@ -182,43 +153,18 @@ curl -X POST http://localhost:3000/donut_store \
         }
 ```
 
-```bash
-curl -X POST -H "Content-Type: application/json"
-     -d  '{
-        "store_name": "Honey Kettle Donut Shop",
-        "street_address": "1234 Nectar Ave, Honeyville, CA 91401 ",
-        "phone": "(555) 123-1234",
-        "donut inventory": [
-            {
-                "donut_type": "bear claw",
-                "variation_filling": "almond paste, raspberry, chocolate, vanilla cream",
-                "variation_topping": "chocolate, powdered sugar"
-            }
-        ]
-        }'
-     http://localhost:3000/donut_store
-```
-
 #### Response example
 
 ```json
 {
-     "store_name": "Honey Kettle Donut Shop",
-        "street_address": "1234 Nectar Ave, Honeyville, CA 91401 ",
-        "phone": "(555) 123-1234",
-        "donut inventory": [
-            {
-                "donut_type": "bear claw",
-                "variation_filling": "almond paste, raspberry, chocolate, vanilla cream",
-                "variation_topping": "chocolate, powdered sugar"
-            }
-        ]
+  "id": 4,
+  "message": "Donut store created successfully."
 }
 ```
 
-### Update an existing donut store
+### **Update a Donut Store**
 
-Updates an existing donut shop in the donut store collection.
+Updates details of an existing donut store.
 
 #### Endpoint
 
@@ -228,15 +174,41 @@ PUT {base_url}/donut_store/{id}
 
 #### Path parameters
 
-| Parameter name | Type | Description |
-| -------------- | ------ | ------------ |
-| `id` | number | The record ID of the donut store to update |
+| Parameter name | Type | Required | Description |
+| ---------------|-------|--------|------------|
+| `id` | number | required | The unique ID of the donut store. |
 
-#### Request headers
+#### Request body
 
-### Delete a donut store
+| Field | Type | Required | Description |
+| ------|--------|---------| ------------|
+| `store_name` | string | optional | The updated name of the store. |
+| `street_address` | string | optional | The updated address. |
+| `phone` | string | optional | The updated phone number. |
+| `donut inventory` | array | optional | The updated inventory details.|
 
-Deletes a donut shop from the donut store collection.
+#### Request example
+```bash
+curl -X PUT 'http://donutfinder.api/v1/donut_store/1' \
+    -H 'Content-Type: application/json' \
+    -d '{
+    "store_name": "Honey Kettle Donut House",
+    "phone": "(555) 123-4321"
+    }'
+```
+
+#### Response example
+
+```json
+{
+    "id": 1,
+    "message": "Donut store updated successfully."
+}
+```
+
+### Delete a Donut Store
+
+Deletes a donut store by its unique ID.
 
 #### Endpoint
 
@@ -246,9 +218,9 @@ DELETE {base_url}/donut_store/{id}
 
 #### Path parameters
 
-| Parameter name | Type | Description |
-| -------------- | ------ | ------------ |
-| `id` | number | The record ID of the donut store to delete |
+| Parameter name | Type | Required | Description |
+| --------------|-------|----------|-------------|
+| `id` | number | required | The unique ID of the donut store. |
 
 #### Request example
 
@@ -256,23 +228,25 @@ DELETE {base_url}/donut_store/{id}
 curl -X DELETE http://localhost:3000/donut_store/1
 ```
 
-#### Request headers
-
-None
-
-#### Request body
-
-None
-
-#### Return body
-
-None
+#### Response example
+```json
+{
+    "message": "Donut store deleted successfully."
+}
+```
 
 ### Error responses
 
-The following table lists the possible error responses.
+The API uses standard HTTP status codes to indicate the success or failure of a request.
+
+| Status code | Description |
+| ----------- | ----------- |
+| 200 | Success |
+| 201 | Resource created successfully |
+| 400 | Bad request (e.g., missing required fields) |
+| 404 | Resource not found |
+| 500 | Internal server error |
 
 
 
-
-## Response schema
+For further assistance, contact our [support team](mailto:support@donutstore.com).
