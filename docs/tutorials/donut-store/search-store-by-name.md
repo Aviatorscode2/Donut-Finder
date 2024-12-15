@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Search Donut Store by Name
+# How to Search for Donut Stores by Name
 
 In this tutorial, you'll learn how to search for a donut store by its name using the Donut Finder API. 
 
@@ -10,7 +10,7 @@ In this tutorial, you'll learn how to search for a donut store by its name using
 
 Before starting this tutorial, ensure you set up your test environment by following the steps outlined in the [Before you start a tutorial](../before-you-start-tutorial.md) section.
 
-> Expect this tutorial to take about 10-5 minutes to complete.
+> Expect this tutorial to take about 5-3 minutes to complete.
 
 ## Tutorial: Search Donut Store by Name
 

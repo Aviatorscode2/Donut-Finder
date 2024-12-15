@@ -15,10 +15,10 @@ nav:
           - Overview: Reference/handling-errors/index.md
   - Tutorial:
       - Donut Store:
-        - Filter Store by Location: tutorials/donut-store/filter-store-by-location.md
-        - Search Store by Name: tutorials/donut-store/search-store-by-name.md
+        - How to Filter Stores by Location: tutorials/donut-store/filter-store-by-location.md
+        - How to Search for Donut Stores by Name: tutorials/donut-store/search-store-by-name.md
       - Donut Type:
-        - Search Donut Types by Name: tutorials/donut-type/search-donut-types-by-name.md
+        - How to Search for Donut Type by Name: tutorials/donut-type/search-donut-types-by-name.md
   - Changelog: 
       - What's New?: Changelog/changelog.md
   - Support:

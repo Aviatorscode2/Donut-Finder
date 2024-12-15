@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Filter Store by Location
+# How to Filter Stores by Location
 
 In this tutorial, you'll learn how to filter donut stores by their location using the Donut Finder API.
 
@@ -10,7 +10,7 @@ In this tutorial, you'll learn how to filter donut stores by their location usin
 
 Before starting this tutorial, ensure you set up your test environment by following the steps outlined in the [installation guide](../../Quickstart/installation.md).
 
-> Expect this tutorial to take about 10-5 minutes to complete.
+> Expect this tutorial to take about 5-3 minutes to complete.
 
 ## Tutorial: Filter Store by Location
 
