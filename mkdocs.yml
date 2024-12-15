@@ -5,7 +5,7 @@ nav:
   - Welcome: index.md
   - Quickstart:
       - Installation: Quickstart/installation.md
-      - Quickstart Guide: Quickstart/quickstart.md
+      - Send your first request: Quickstart/quickstart.md
   - Reference:
       - Donut Store:
           - Overview: Reference/donut-store/index.md
@@ -38,10 +38,6 @@ theme:
     - navigation.sections
     - navigation.indexes
     - toc.follow
-  icon:
-    previous: fontawesome/solid/angle-left
-    next: fontawesome/solid/angle-right
-    home: fontawesome-brands-markdown
     
 
   language: en
@@ -73,6 +69,9 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 
 
