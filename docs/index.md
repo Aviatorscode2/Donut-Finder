@@ -6,7 +6,6 @@ layout: page
 
 The Donut Finder API is a lightweight and efficient API designed to help developers locate donut shops, access detailed information about them, and integrate this data into their applications. The API follows a REST architecture. You can access the API’s resources via HTTP requests, and responses are given in JSON format.
 
-
 ![Alt text](images/logo.png)
 
 ## **Use Cases**
@@ -21,7 +20,7 @@ The Donut Finder API can be used in various scenarios, such as:
 
 - **Social Media Bots**: Power social media bots that recommend the best donut shops based on user queries and preferences.
 
-- **Review Aggregation**: Aggregate user reviews for donut shops and display ratings to help users make informed choices.
+- **Review Aggregation**: Aggregate user reviews for donut shops and display ratings to help users make informed choices
 
 <div class="grid cards" markdown>
 
