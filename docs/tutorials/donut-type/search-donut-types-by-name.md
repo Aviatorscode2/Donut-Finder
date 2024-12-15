@@ -2,13 +2,15 @@
 layout: page
 ---
 
-# Search Donut Type by Name
+# How to Search for Donut Type by Name
 
 In this tutorial, you'll learn how to search donut stores by their location using the Donut Finder API.
 
 ### Before You Start 
 
 - You have set up your environment according to the steps outlined in the [Before you start a tutorial](../before-you-start-tutorial.md) guide.
+
+> Expect this tutorial to take about 5-3 minutes to complete.
 
 ## Search Donut Type by Name
 
