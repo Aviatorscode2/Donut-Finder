@@ -6,25 +6,19 @@ The Donut Type API follows a REST architecture. You can access the API’s resou
 
 ## Base URL
 
-The API reference docs refer to a `{base_url}` when they refer to the URL of a resource. The `{base_url}` value depends on the installation of the service.
-
-When running a local test, the `{base_url}` is generally `http://localhost:3000`.
-
 ```shell
 {base_url}/donut_type
 ```
 
-## Version
+## **Version**
 
 The current API version is 1.0.
 
-## Events
+## **Endpoints**
 
-The Donut Type API supports the following events: `donut_type added`, `donut_type updated`, `donut_type deleted`, etc.
+### **Retrieve All Donut Types**
 
-### Get a list of all donut type
-
-Retrieves a list of all donut type.
+Returns a list of all available donut types, including their IDs and associated store IDs. Note: The number of records returned is not limited, but pagination options are not currently supported by this endpoint.
 
 #### Endpoint
 
@@ -38,49 +32,27 @@ GET {base_url}/donut_type
 curl -X GET http://localhost:3000/donut_type
 ```
 
-#### Response example
+#### Response example 
 
 ```json
 [
     {
         "donut_name": "bear claw",
-        "id": "1",
-        "donut_stores": [
-            1,
-            2
-        ]
+        "id": 1,
+        "donut_stores": [1, 2]
     },
     {
         "donut_name": "cruller",
-        "id": "2",
-        "donut_stores": [
-            1,
-            3
-        ]
-    },
-    {
-        "donut_name": "donut holes",
-        "id": "3",
-        "donut_stores": [
-            1,
-            2,
-            3
-        ]
-    },
-    {
-        "donut_name": "jelly",
-        "id": "4",
-        "donut_stores": [
-            1,
-            3
-        ]
+        "id": 2,
+        "donut_stores": [1, 3]
     }
 ]
 ```
 
-### Get details for a specific donut type
+### **Retrieve a Donut Type by ID**
 
-Retrieves details for a donut type specified by the `id` parameter, if it exists.
+Fetches details of a specific donut type using its unique `id`.
+
 
 #### Endpoint
 
@@ -90,9 +62,9 @@ GET {base_url}/donut_type/{id}
 
 #### Path parameters
 
-| Parameter name | Type | Description |
-| -------------- | ------ | ------------ |
-| `id` | number | The record ID of the donut type to return |
+| Parameter name | Type | Required | Description |
+| ---------------|------|----------|------------|
+| `id` | number | required | The unique ID of the donut type. |
 
 #### Request example
 
@@ -105,20 +77,135 @@ curl -X GET http://localhost:3000/donut_type/1
 ```json
 {
     "donut_name": "bear claw",
-    "id": "1",
-    "donut_stores": [
-        1,
-        2
-    ]
+    "id": 1,
+    "donut_stores": [1, 2]
 }
 ```
 
-## Response schema
+### **Create a New Donut Type**
+
+Adds a new donut type to the database.
+
+#### Endpoint
+
+```shell
+POST {base_url}/donut_type
+```
 
 
+#### Request body
 
-* `GET /donut_store` - Get a list of all donut shops
-* `GET /donut_store/{id}` - Get details for a specific donut shop
-* `POST /donut_store` - Add a new donut shop
-* `PUT /donut_store/{id}` - Update an existing donut shop
-* `DELETE /donut_store/{id}` - Delete a donut shop
+In the request body, specify a JSON representation of the `donut_type` object. The following table lists the properties that are required when you add a new donut type.
+
+| Field | Type | Required | Description |
+| ------|-------|------|------------|
+| `donut_name` | string | required | The name of the new donut type. |
+| `donut_stores` | array | required | List of store IDs where it is available. |
+
+#### Request example 
+
+```bash
+curl -X POST 'http://donutfinder.net/api/donut-type' \
+    -H 'Content-Type: application/json' \
+    -d '{
+        "donut_name": "glazed",
+        "donut_stores": [1, 3]
+    }'
+```
+
+#### Response example
+
+```json
+{
+    "donut_name": "glazed",
+    "id": 5,
+    "donut_stores": [1, 3]
+}
+```
+
+### **Update a Donut Type**
+
+Updates details of an existing donut type.
+
+#### Endpoint
+
+```shell
+PUT {base_url}/donut_type/{id}
+```
+
+#### Path parameters
+
+| Parameter name | Type | Required | Description |
+| ---------------|------|----------|------------|
+| `id` | number | required | The unique ID of the donut type. |
+
+#### Request body
+
+| Field | Type | Required | Description |
+| ------|--------|------|------------|
+| `donut_name` | string | optional | The updated name of the type. |
+| `donut_stores` | array | optional | The updated address. 
+
+#### Request example
+```bash
+curl -X PUT 'http://donutfinder.net/api/donut-type/1' \
+    -H 'Content-Type: application/json' \
+    -d '{
+        "donut_name": "chocolate bear claw",
+        "donut_stores": [1, 2, 4]
+    }'
+```
+
+#### Response example
+
+```json
+{
+    "donut_name": "chocolate bear claw",
+    "id": 1,
+    "donut_stores": [1, 2, 4]
+}
+```
+
+### Delete a Donut Type
+
+Deletes a donut type by its unique ID. If the specified ID does not exist, no action is taken, and an error message is returned in the response.
+
+#### Endpoint
+
+```shell
+DELETE {base_url}/donut_type/{id}
+```
+
+#### Path parameters
+
+| Parameter name | Type | Required | Description |
+| ---------------| ------|---------|-------------|
+| `id` | number | required | The unique ID of the donut type. |
+
+#### Request example
+
+```shell
+curl -X DELETE http://localhost:3000/donut_type/1
+```
+
+#### Response example
+```json
+{
+    "message": "Donut type deleted successfully."
+}
+```
+
+### Error responses
+
+The API uses standard HTTP status codes to indicate the success or failure of a request.
+
+| Status code | Description |
+| ----------- | ----------- |
+| 200 | Success |
+| 201 | Resource created successfully |
+| 400 | Bad request (e.g., missing required fields) |
+| 404 | Resource not found |
+| 500 | Internal server error |
+
+
+For further assistance, contact our [support team](mailto:support@donuttype.com).

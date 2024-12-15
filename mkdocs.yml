@@ -1,16 +1,49 @@
 site_name: Donut Finder API
 site_url: https://mydomain.org/mysite
+
+nav:
+  - Welcome: index.md
+  - Quickstart:
+      - Installation: Quickstart/installation.md
+      - Quickstart Guide: Quickstart/quickstart.md
+  - Reference:
+      - Donut Store:
+          - Overview: Reference/donut-store/index.md
+      - Donut Type:
+          - Overview: Reference/donut-type/index.md
+      - Handling Errors:
+          - Overview: Reference/handling-errors/index.md
+  - Tutorial:
+      - Donut Store:
+        - Filter Store by Location: tutorials/donut-store/filter-store-by-location.md
+        - Search Store by Name: tutorials/donut-store/search-store-by-name.md
+      - Donut Type:
+        - Search Donut Types by Name: tutorials/donut-type/search-donut-types-by-name.md
+  - Changelog: 
+      - What's New?: Changelog/changelog.md
+  - Support:
+      - FAQ: Support/faq.md
+      - Community: Support/community.md
+
+
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - navigation.sections
+    - navigation.indexes
+    - toc.follow
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    home: fontawesome-brands-markdown
+    
+
   language: en
   palette: 
     # Palette toggle for light mode
@@ -27,6 +60,8 @@ theme:
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - admonition
@@ -37,6 +72,20 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+  - md_in_html
 
+
+
+extra_css:
+  - custom.css
+
+extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de
 
 copyright: Copyright &copy; 2024 <a href="https://github.com/Aviatorscode2" target="_blank" rel="noopener">Victor Yakubu</a>

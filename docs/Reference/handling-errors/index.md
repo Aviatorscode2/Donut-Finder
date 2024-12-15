@@ -2,8 +2,6 @@
 
 The Donut Finder API follows standard HTTP status codes to indicate the success or failure of an API call. Here is an overview of common HTTP status codes and their meanings, along with typical reasons for each code.
 
-Operations that execute successfully will return `2xx` codes. Operations that result in an error due to a problem on the client's side, such as invalid input, will return standard `4xx` codes. Operations that result in an error due to a problem with the server will return `5xx` codes.
-
 ## HTTP Status Code Summary
 
 This section summarizes the most frequent HTTP status codes returned by the API and describes their common causes.
