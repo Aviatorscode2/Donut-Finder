@@ -8,7 +8,7 @@ In this tutorial, you'll learn how to search donut stores by their location usin
 
 ### Before You Start 
 
-- You have set up your environment according to the steps outlined in the [Before you start a tutorial](../before-you-start-tutorial.md) guide.
+Before starting this tutorial, ensure you set up your test environment by following the steps outlined in the [installation guide](../../Quickstart/installation.md).
 
 > Expect this tutorial to take about 5-3 minutes to complete.
 

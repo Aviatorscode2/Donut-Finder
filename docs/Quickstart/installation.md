@@ -64,10 +64,7 @@ cd Donut-Finder
 ```
 
 ### Step 2 - Open the Project
-Open the project in your code editor:
-```bash
-code .
-```
+Open the project in your preferred code editor
 
 ### Step 3 - Start the Server
 Navigate to the `api` folder and start the `json-server`:
